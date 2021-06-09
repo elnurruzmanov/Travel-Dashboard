@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-url-hash@0.1.0/dist/js/splide-extension-url-hash.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main class="main-general">
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <button class="btn">
+                    <img src="assets/img/menu.png" class="menu" alt="menu">
+                </button>
+                <button class="close-btn">
+                    <img src="assets/img/close.png" alt="close" class="close">
+                </button>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <img src="assets/img/home.svg" alt="home" class="sidebar-img">
+                    <a href="#" class="sidebar-link">Dashtboard</a>
+                </li>
+                <li class="sidebar-item">
+                    <img src="assets/img/Doctor.png" alt="home" class="sidebar-image">
+                    <a href="#" class="sidebar-item-link">Upcoming</a>
+                </li>
+                <li class="sidebar-item">
+                    <img src="assets/img/compas.png" alt="home" class="sidebar-image">
+                    <a href="#" class="sidebar-item-link">Explore</a>
+                </li>
+                <li class="sidebar-item">
+                    <img src="assets/img/profile.png" alt="home" class="sidebar-image">
+                    <a href="#" class="sidebar-item-link">Profile</a>
+                </li>
+                <li class="sidebar-item">
+                    <img src="assets/img/settings.png" alt="home" class="sidebar-image">
+                    <a href="#" class="sidebar-item-link">Settings</a>
+                </li>
+            </ul>
+            <div class="logout-info">
+                <img src="assets/img/logout.png" alt="logout" class="logout-img">
+                <a href="#" class="sidebar-item-link">Logout</a>
+            </div>
+        </aside>
+
+
+
+        <main class="main">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-title">
+                        <h1 class="navbar-info">Shikra</h1>
+                    </div>
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <ul class="navbar-item-list">
+                                <li class="navbar-list-item">
+                                    <form class="form">
+                                        <button class="button">
+                                            <img src="assets/img/search.png" alt="search" class="navbar-list-img">
+                                        </button>
+                                        <input type="text" placeholder="Search" required class="input">
+                                    </form>
+                                </li>
+                                <li class="navbar-list-item">
+                                    <button class="button">
+                                        <img src="assets/img/tune.svg" alt="Filter" class="filter-img">
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="explore">
+                <ul class="explore-list">
+                    <li class="explore-item">
+                        <img src="assets/img/compass.png" alt="compass" class="explore-img">
+                    </li>
+                    <li class="explore-item">
+                        <a href="#" class="explore-link">Explore</a>
+                    </li>
+                </ul>
+                <ul class="next-list">
+                    <li class="next-item">
+                        <button class="button">
+                            <img src="assets/img/left.png" alt="left" class="next-img">
+                        </button>
+                    </li>
+                    <li class="next-item">
+                        <button class="button">
+                            <img src="assets/img/right.png" alt="right" class="next-img">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <section class="section">
+                <div class="world-islands">
+                    <ul class="world-list">
+                        <li class="world-item">
+                            <a href="#" class="world-link">Europe</a>
+                        </li>
+                        <li class="world-item">
+                            <a href="#" class="world-link world-america">America</a>
+                        </li>
+                        <li class="world-item">
+                            <a href="#" class="world-link">Sights</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="islands-list">
+                    <li class="islands-item">
+                        <img src="assets/img/Thailand.png" alt="Thailand" class="islands-img">
+                        <h2 class="islands-info">
+                            Phi Phi Islands
+                        </h2>
+                        <img src="assets/img/Zakrepil.png" alt="Zakrepil" class="save-img">
+                        <ul class="islands-location-list">
+                            <li class="location-islands-item">
+                                <ul class="islands-item-list">
+                                    <li class="islands-item-item">
+                                        <img src="assets/img/location.png" alt="location" class="img-location">
+                                    </li>
+                                    <li class="islands-item-item">
+                                        <a href="#" class="location-link">
+                                            Thailand
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="location-islands-item">
+                                <p class="price">$1,480</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="islands-list">
+                    <li class="islands-item">
+                        <img src="assets/img/Maldives.png" alt="Maldives" class="islands-img">
+                        <h2 class="islands-info">
+                            Kudahuvadhoo Island
+                        </h2>
+                        <img src="assets/img/Zakrepil.png" alt="Zakrepil" class="save-img">
+                        <ul class="islands-location-list">
+                            <li class="location-islands-item">
+                                <ul class="islands-item-list">
+                                    <li class="islands-item-item">
+                                        <img src="assets/img/location.png" alt="location" class="img-location">
+                                    </li>
+                                    <li class="islands-item-item">
+                                        <a href="#" class="location-link">
+                                            Maldives
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="location-islands-item">
+                                <p class="price">$1,480</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="islands-list">
+                    <li class="islands-item">
+                        <img src="assets/img/Israil.png" alt="Thailand" class="islands-img">
+                        <h2 class="islands-info">
+                            Greecevillage
+                        </h2>
+                        <img src="assets/img/Zakrepil.png" alt="Zakrepil" class="save-img">
+                        <ul class="islands-location-list">
+                            <li class="location-islands-item">
+                                <ul class="islands-item-list">
+                                    <li class="islands-item-item">
+                                        <img src="assets/img/location.png" alt="location" class="img-location">
+                                    </li>
+                                    <li class="islands-item-item">
+                                        <a href="#" class="location-link">
+                                            Maldives
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="location-islands-item">
+                                <p class="price">$1,480</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <div class="invite-friends">
+                <div class="friends">
+                    <img src="assets/img/group.png" alt="group" class="group-img">
+                    <h3 class="group-info">Invite Friends</h3>
+                </div>
+                <ul class="members-list">
+                    <li class="members-item">
+                        <button class="button-members">
+                            <img src="assets/img/more.png" alt="more" class="more-img">
+                        </button>
+                    </li>
+                    <li class="members-item">
+
+                        <img src="assets/img/fire.png" alt="fire" class="fire-img">
+
+                    </li>
+                    <li class="members-item">
+                        <h3 class="members-info">Members</h3>
+                    </li>
+                </ul>
+                <div class="more">
+                    <button class="button-members">
+                        <img src="assets/img/more.png" alt="more" class="more-image">
+                    </button>
+                </div>
+            </div>
+
+            <header class="header">
+                <div class="header-info">
+                    <ul class="header-info-list">
+                        <li class="header-info-item">
+                            <img src="assets/img/Nate.png" alt="Nate" class="nate-img">
+                            <p class="name">Nate</p>
+                            <img src="assets/img/x.png" alt="x-img" class="x-img">
+                        </li>
+                        <li class="header-info-item yellow">
+                            <img src="assets/img/Jim.png" alt="Nate" class="nate-img">
+                            <p class="name">Jim</p>
+                            <img src="assets/img/x.png" alt="x-img" class="x-img">
+                        </li>
+                        <li class="header-info-item skin">
+                            <img src="assets/img/Angela.png" alt="Nate" class="nate-img">
+                            <p class="name">Alex</p>
+                            <img src="assets/img/x.png" alt="x-img" class="x-img">
+                        </li>
+                        <li class="header-info-item primary">
+                            <img src="assets/img/Bhaje.png" alt="Nate" class="nate-img">
+                            <p class="name">Bhatur</p>
+                            <img src="assets/img/x.png" alt="x-img" class="x-img">
+                        </li>
+                        <li class="header-info-item rose">
+                            <img src="assets/img/Bilo.png" alt="Nate" class="nate-img">
+                            <p class="name">Sanche</p>
+                            <img src="assets/img/x.png" alt="x-img" class="x-img">
+                        </li>
+                        <li class="header-info-item dark">
+                            <img src="assets/img/Alex.png" alt="Nate" class="nate-img">
+                            <p class="name">Sar</p>
+                            <img src="assets/img/x.png" alt="x-img" class="x-img">
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </header>
+        </main>
+    </main>
+
+
+     
+    <div class="adress-info">
+        <div class="img-box">
+            <div id="image-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./assets/img/Thailand.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./assets/img/Israil.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./assets/img/Maldives.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    
+        <!-- <div class="address-image">
+            <img src="assets/img/address.png" alt="address" class="address-img">
+            <p class="added-text">Added Today</p>
+            <img src="assets/img/left-arrow.png" alt="left" class="left-arrow-image">
+            <img src="assets/img/right-arrow.png" alt="lright" class="right-arrow-image">
+        </div> -->
+        <h3 class="addres-center">
+            25 Lakeland, Westland, Michigan, USA.
+        </h3>
+        <ul class="address-list">
+            <li class="address-item">
+                <a href="#" class="address-link">Apartment</a>
+                <a href="#" class="address-link link-address">by Robin Johnson</a>
+            </li>
+            <li class="address-item">
+                <img src="assets/img/Love.png" alt="Love" class="address-img">
+            </li>
+        </ul>
+        <div class="network-info">
+            <div class="network-image">
+                <img src="assets/img/Nature.png" alt="barg" class="leaf-img">
+                <img src="assets/img/gorup.png" alt="loading" class="leaf-img">
+                <img src="assets/img/VECTOR.png " alt="send" class="leaf-img">
+            </div>
+            <a href="#" class="price-link">$ 2.900.00</a>
+        </div>
+        <div class="to-go-info">
+            <ul class="to-go-list">
+                <li class="to-go-item">
+                    <img src="assets/img/property.png" alt="property" class="to-go-img">
+                </li>
+                <li class="to-go-item">
+                    <a href="#" class="to-go-link">Used Property</a>
+                </li>
+            </ul>
+            <ul class="to-go-list">
+                <li class="to-go-item">
+                    <img src="assets/img/car.png" alt="car" class="car-img">
+                </li>
+                <li class="to-go-item">
+                    <a href="#" class="car-link">4
+                    </a>
+                </li>
+            </ul>
+            <ul class="to-go-list">
+                <li class="to-go-item">
+                    <img src="assets/img/LAYER.png" alt="car" class="layer-img">
+                </li>
+                <li class="to-go-item">
+                    <a href="#" class="layer-link">170 m2
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="map">
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a
+                    href="https://yandex.uz/maps/10335/tashkent/?ll=69.257764%2C41.316652&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=69.259138%2C41.315940&whatshere%5Bzoom%5D=13&z=13"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Махалля Урда — Яндекс.Карты</a><iframe
+                    class="iframe" src="https://yandex.uz/map-widget/v1/-/CCUabFvUWA" frameborder="1"
+                    allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+        <ul class="to-go-list">
+            <li class="to-go-item">
+                <h2 class="to-go-title">
+                    Photos
+                </h2>
+            </li>
+            <li class="to-go-item">
+                <a href="#" class="more-menu-link">
+                    <img src="assets/img/more.png" alt="more" class="to-go-menu">
+                </a>
+            </li>
+        </ul>
+        <ul class="hotels-list">
+            <li class="hotels-item">
+                <img src="assets/img/hotel1.png" alt="hotel1" class="hotels-img">
+            </li>
+            <li class="hotels-item">
+                <img src="assets/img/hotel2.png" alt="hotel1" class="hotels-img">
+            </li>
+            <li class="hotels-item">
+                <img src="assets/img/hotel3.png" alt="hotel1" class="hotels-img">
+            </li>
+            <li class="hotels-item">
+                <img src="assets/img/hotel4.png" alt="hotel1" class="hotels-img">
+            </li>
+            <li class="hotels-item">
+                <img src="assets/img/hotel5.png" alt="hotel1" class="hotels-img">
+            </li>
+            <li class="hotels-item">
+                <img src="assets/img/hotel6.png" alt="hotel1" class="hotels-img">
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
