@@ -28,6 +28,10 @@ body {
 
 }
 
+.content{
+    width:100%;
+}
+
 .main-general {
     display: flex;
     justify-content: space-between;
@@ -517,10 +521,6 @@ body {
     padding: 9px 20px;
     top: 4%;
     left: 5%;
-}
-
-.content{
-    width:30%;
 }
 
 .address-img {
