@@ -59,11 +59,8 @@ closeElement.addEventListener('click', event=>{
 
 
 document.addEventListener( 'DOMContentLoaded', function () {
-	new Splide( '#image-slider', {
-    type   : 'loop'
-  } ).mount();
+	new Splide( '#image-slider' ).mount();
 } );
- 
 
 
 

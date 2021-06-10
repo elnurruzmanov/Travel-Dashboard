@@ -13,6 +13,11 @@ ul {
     margin: 0 auto;
 }
 
+.splide__slide img {
+	width : 100%;
+	height: auto;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -512,6 +517,10 @@ body {
     padding: 9px 20px;
     top: 4%;
     left: 5%;
+}
+
+.content{
+    width:30%;
 }
 
 .address-img {
