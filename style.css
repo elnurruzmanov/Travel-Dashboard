@@ -29,7 +29,13 @@ body {
 }
 
 .content{
-    width:100%;
+  width: 100%;
+}
+
+.pexels{
+    border-radius:15px;
+    width:387px;
+    height:230px;
 }
 
 .main-general {
