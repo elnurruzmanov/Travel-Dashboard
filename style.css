@@ -643,6 +643,10 @@ body {
     color: #757575;
 }
 
+.hotels-item{
+    margin:5px 5px;
+}
+
 .to-go-info {
     display: flex;
     justify-content: space-between;

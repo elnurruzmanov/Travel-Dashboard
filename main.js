@@ -79,12 +79,13 @@ const thirdElement = document.querySelector('#third')
 
 firstElement.addEventListener("click", event =>{
   for(let item of DATA){
-    pexelsElement.forEach (Element = DATA [0] ["img"].forEach(Photo => Element.src = layerImg));
+    pexelsElement.forEach (Element = DATA [0] ["img"].forEach(Photo => Element.src = Photo));
     addresCenterElement.textContent = DATA [0]["name"]
     addressLinkElement.textContent = DATA [0]["text"]
     priceLinkElement.textContent = DATA [0]["price"]
 
-    layerImgElement.forEach(Element => DATA [0]["photos"].forEach(layerImg => Element.src = layerImg ))
+    layerImgElement.forEach(Element => DATA [0]["photos"].forEach(layerImg => Element.src = Photo
+      ))
   }
 })
 
@@ -158,13 +159,12 @@ const DATA = [
    
  ]
 
-
+ const menuElement = document.querySelector('.menu')
  const sidebarElement = document.querySelector('.sidebar')
  const closeBtnElement = document.querySelector('.close-btn')
+ const mainElement = document.querySelector('.main')
+ const navbarElement = document.querySelector('.navbar')
 
-//  closeBtnElement.addEventListener('click', event => {
-//     sidebarElement.style.width = '6%'
- })
 
 
 
