@@ -34,8 +34,12 @@ body {
 
 .pexels{
     border-radius:15px;
-    width:387px;
-    height:230px;
+    width:200px;
+    object-fit: cover;
+}
+
+.splide__track{
+    height: 220px;
 }
 
 .main-general {
@@ -499,6 +503,7 @@ body {
     background: rgba(250, 247, 247, 0.9);
     backdrop-filter: blur(64px);
     position:absolute;
+    padding:15px;
 }
 
 .main{
@@ -507,7 +512,7 @@ body {
 
 .adress-info{
     position: absolute;
-    top:6%;
+    top:2%;
     left:70%;
     display: none;
 }
